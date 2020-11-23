@@ -1,18 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/QuoteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET QUOTE"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/FirstPersonPicture"
+        android:layout_width="@dimen/avatar_dimensions"
+        android:layout_height="@dimen/avatar_dimensions"
+        android:layout_below="@id/QuoteButton"
+        android:src="@drawable/seb_vett" />
+
     <TextView
+        android:id="@+id/FirstPersonTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@id/QuoteButton"
+        android:layout_toRightOf="@id/FirstPersonPicture"
+        android:text="@string/FirstPersonTitle"
+        style="@style/TitleText"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/FirstPersonDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FirstPersonTitle"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/FirstPersonPicture"
+        android:text="@string/FirstPersonDescription"
+        style="@style/DescriptionText"
+        />
+
+
+    <ImageView
+        android:id="@+id/SecondPersonPicture"
+        android:layout_width="@dimen/avatar_dimensions"
+        android:layout_height="@dimen/avatar_dimensions"
+        android:layout_below="@id/FirstPersonPicture"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/kimi_rai"
+        />
+
+    <TextView
+        android:id="@+id/SecondPersonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FirstPersonPicture"
+        android:layout_toRightOf="@id/SecondPersonPicture"
+        android:layout_marginTop="25dp"
+        android:text="@string/SecondPersonTitle"
+        style="@style/TitleText"
+        />
+
+    <TextView
+        android:id="@+id/SecondPersonDescription"
+        style="@style/DescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SecondPersonTitle"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/SecondPersonPicture"
+        android:text="@string/SecondPersonDescription" />
+
+    <ImageView
+        android:id="@+id/ThirdPersonImage"
+        android:layout_width="@dimen/avatar_dimensions"
+        android:layout_height="@dimen/avatar_dimensions"
+        android:src="@drawable/max_ver"
+        android:layout_below="@id/SecondPersonPicture"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/ThirdPersonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ThirdPersonImage"
+        android:layout_below="@id/SecondPersonPicture"
+        android:layout_marginTop="20dp"
+        style="@style/TitleText"
+        android:text="@string/ThirdPersonTitle"
+        />
+    <TextView
+        android:id="@+id/ThirdPersonDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/DescriptionText"
+        android:text="@string/ThirdPersonDescription"
+        android:layout_below="@+id/ThirdPersonTitle"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/ThirdPersonImage"
+        />
+
+    <RadioGroup
+        android:id="@+id/RadioGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ThirdPersonImage"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/RadioBtnFirstPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_below="@+id/ThirdPersonImage"
+            android:text="Sebastian" />
+
+        <RadioButton
+            android:id="@+id/RadioBtnSecondPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kimi" />
+
+        <RadioButton
+            android:id="@+id/RadioBtnThirdPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/DescriptionEdit"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/RadioGrp"
+        android:ellipsize="end"
+        android:layout_alignParentBottom="true"
+        android:hint="Change selected description!" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FirstPersonTitle"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/FirstPersonPicture"
+        android:text="@string/FirstPersonAge"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SecondPersonTitle"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/SecondPersonPicture"
+        android:text="@string/SecondPersonAge"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ThirdPersonTitle"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ThirdPersonImage"
+        android:text="@string/ThirdPersonAge"
+        />
+    <Button
+        android:id="@+id/DescBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/RadioGrp"
+        android:layout_below="@id/ThirdPersonDescription"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Change description"/>
+
+</RelativeLayout>

@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">ORMWA_LV1DZ</string>
+    <string name="app_name">F1 DRIVER INFORMATION</string>
+    <string name="FirstPersonDescription">Sebastian Vettel is a German racing driver who races in Formula One for Scuderia Ferrari. He is a four-time Formula One World Champion, having won consecutive titles from 2010 to 2013 with Red Bull Racing, and is regarded by many as one of the greatest drivers in the history of the sport, and by some the greatest ever. In addition to holding a number of youngest records in Formula One, Vettel holds the records for the most consecutive race wins (9) and the most race victories in a single season (13),[4][5] as well as accumulating the third most race victories (53), podium finishes (121) and the fourth most pole positions(53). </string>
+    <string name="SecondPersonDescription">Kimi-Matias Räikkönen, nicknamed "The Iceman", is a Finnish racing driver currently driving in Formula One for Alfa Romeo Racing, racing under the Finnish flag. Räikkönen won the 2007 Formula One World Championship driving for Scuderia Ferrari. In addition to this title, he also finished second overall in 2003 and 2005, and third in 2008, 2012 and 2018. With 103 podium finishes, he is one of only five drivers to have taken over 100 podiums. Räikkönen has won 21 Grands Prix, making him the most successful Finnish driver in terms of Formula One race wins, and is the only driver to win in the V10, V8 and the V6 turbo hybrid engine eras.[4] After nine seasons racing in Formula One he left the sport to compete in the World Rally Championship in 2010 and 2011, returning to Formula One from 2012 onward. He is known for his reserved personality and reluctance to participate in PR events. At the 2020 Eifel Grand Prix, he broke the record for most starts in Formula One.</string>
+    <string name="ThirdPersonDescription">Max Emilian Verstappen is a Belgian-Dutch racing driver currently competing in Formula One, under the Dutch flag, with Red Bull Racing. At the 2015 Australian Grand Prix, when he was aged 17 years, 166 days, he became the youngest driver to compete in Formula One. He holds several other "firsts" in Formula One racing.</string>
+
+    <string name="FirstPersonTitle">Sebastian Vettel</string>
+    <string name="SecondPersonTitle">Kimi Raikkonen</string>
+    <string name="ThirdPersonTitle">Max Verstappen</string>
+
+    <string name="FirstPersonAge">age 33 years</string>
+    <string name="SecondPersonAge">age 41 years</string>
+    <string name="ThirdPersonAge">age 23 years</string>
+
+
+    <string-array name="Quotes">
+        <item>"Leave me alone, I know what I'm doing!"  -K. Raikkonen</item>
+        <item>Interviewer: “The helmet has a special meaning for many drivers. How important is it to you?”
+            Kimi: “It protects my head.”</item>
+        <item>"Racing is more like a hobby to me."  -K.Raikkonen</item>
+        <item>Bwoah!    -K. Raikkonen</item>
+        <item>"I looked at the trophy today and I thought 'that's a nice one!', it was maybe worth getting it!"     -S. Vettel</item>
+        <item>"I come from an ordinary family - my dad is a carpenter, a roof-maker - and we've always loved racing together."  -S.Vettel</item>
+        <item>"I just want to do the best I can every time."    -M.Verstappen</item>
+    </string-array>
 </resources>
